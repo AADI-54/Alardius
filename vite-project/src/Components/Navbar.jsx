@@ -206,7 +206,7 @@ export default function Navigation() {
       <header className="relative bg-gray-800 z-50">
         {" "}
         {/* Darken the background here */}
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+        <p className="flex h-10 items-center justify-center bg-gray-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Contact us on *********
         </p>
         <nav

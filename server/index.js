@@ -1,6 +1,6 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const cors = require("cors");
+import express from 'express';
+import nodemailer from 'nodemailer';
+import cors from 'cors';
 import path from "path";
 
 const app = express();
