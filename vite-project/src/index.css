@@ -1,0 +1,11 @@
+/* index.css */
+
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Solid dark neutral background */
+body {
+  background: #1c1c1c; /* Matches the RnDHighlightSection component */
+  color: #f1f5f9; /* Soft white text for dark background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
