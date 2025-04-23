@@ -1,29 +1,34 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
-import path from "path";
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Manually define __dirname for ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const port = 5000;  // You can change the port as needed
+const port = 5000;
 
 // Middleware
 app.use(express.json());
-app.use(cors());  // Enable CORS for requests from the frontend
+app.use(cors());
 
-
-
+// Serve static files from the Vite frontend build
 app.use(express.static(path.join(__dirname, "../vite-project/dist")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../vite-project", "dist", "index.html"));
-  });
+// Handle any unmatched routes with index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
+});
 
 // Nodemailer Transporter Configuration
 const transporter = nodemailer.createTransport({
-  service: "gmail",  // You can use any SMTP provider
+  service: "gmail",
   auth: {
     user: "aggarwaladitya0889@gmail.com",  // Replace with your email
-    pass: "ylua lfzt uffy slbt",  // Replace with your email password (or use App Password)
+    pass: "ylua lfzt uffy slbt",           // Use App Password, not your real password
   },
 });
 
@@ -32,24 +37,22 @@ app.post("/submit-query", (req, res) => {
   const { name, email, query } = req.body;
 
   const mailOptions = {
-    from: "aggarwaladitya0889@gmail.com",  // Your email address
-    to: "aggarwaladitya839@gmail.com",  // The email you want to send the query to
+    from: "aggarwaladitya0889@gmail.com",
+    to: "aggarwaladitya839@gmail.com",
     subject: "New Query Submission",
-    text: `You have received a new query submission:
-
-    Name: ${name}
-    Email: ${email}
-    Query: ${query}`,
+    text: `You have received a new query submission:\n\nName: ${name}\nEmail: ${email}\nQuery: ${query}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+      console.error("Email error:", error);
       return res.status(500).send("Error sending email");
     }
     res.status(200).send("Email sent: " + info.response);
   });
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
