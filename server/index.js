@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../vite-project/dist")));
 
 // Handle any unmatched routes with index.html
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
 });
 
