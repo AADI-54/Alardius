@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+import path from "path";
 
 const app = express();
 const port = 5000;  // You can change the port as needed
@@ -8,6 +9,14 @@ const port = 5000;  // You can change the port as needed
 // Middleware
 app.use(express.json());
 app.use(cors());  // Enable CORS for requests from the frontend
+
+
+
+app.use(express.static(path.join(__dirname, "../vite-project/dist")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../vite-project", "dist", "index.html"));
+  });
 
 // Nodemailer Transporter Configuration
 const transporter = nodemailer.createTransport({
