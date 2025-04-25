@@ -1,29 +1,38 @@
+// ✅ Required Imports
 import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-// Manually define __dirname for ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+dotenv.config();
+
+// // Manually define __dirname for ES Modules
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
-// Middleware
+// ✅ Middleware
 app.use(express.json());
 app.use(cors());
 
 // Serve static files from the Vite frontend build
-app.use(express.static(path.join(__dirname, "../vite-project/dist")));
+// app.use(express.static(path.join(__dirname, "../vite-project/dist")));
 
-// Handle any unmatched routes with index.html
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
-});
+// // Handle any unmatched routes with index.html
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
+// });
 
-// Nodemailer Transporter Configuration
+
+
+
+
+// ✅ Nodemailer Transporter Configuration
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -32,7 +41,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Route to handle form submission
+// ✅ Route to handle form submission
 app.post("/submit-query", (req, res) => {
   const { name, email, query } = req.body;
 
@@ -52,7 +61,7 @@ app.post("/submit-query", (req, res) => {
   });
 });
 
-// Start the server
+// ✅ Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

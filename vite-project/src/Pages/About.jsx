@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import img1 from '../Components/assetsCrousal/crousal3.jpg';
+import img1 from '../Data/img/mission.jpg';
+import img2 from '../Data/img/story.jpg';
 
 const AboutUs = () => {
   return (
-    <div className="px-6 py-10 max-w-7xl mx-auto space-y-20 bg-gray-950">
+    <div className="px-6 py-10 w-full bg-gray-950">
       {/* Our Mission */}
-      <section className="grid md:grid-cols-2 gap-10 items-center">
+      <section className="grid md:grid-cols-2 gap-10 items-center mb-20">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white">Our Mission</h2>
           <p className="text-lg text-gray-300">
@@ -20,31 +21,31 @@ const AboutUs = () => {
           </p>
         </div>
         <motion.div
-          className="flex justify-center"
+          className="w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <img
             src={img1}
-            alt="Founders"
-            className="rounded-3xl shadow-lg w-full max-w-md"
+            alt="Our Mission"
+            className="w-full h-auto rounded-3xl shadow-lg object-cover"
           />
         </motion.div>
       </section>
 
       {/* Our Story */}
-      <section className="grid md:grid-cols-2 gap-10 items-center">
+      <section className="grid md:grid-cols-2 gap-10 items-center mb-20">
         <motion.div
-          className="flex justify-center"
+          className="w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <img
-             src={img1}
+            src={img2}
             alt="Our Story"
-            className="rounded-3xl shadow-lg w-full max-w-md"
+            className="w-full h-auto rounded-3xl shadow-lg object-cover"
           />
         </motion.div>
         <div className="space-y-6">
@@ -58,10 +59,10 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Vertices / Highlights Section */}
-      <section className="bg-gray-900 text-white py-16 rounded-2xl shadow-md">
+      {/* Highlights Section */}
+      <section className="bg-gray-900 text-white py-16 rounded-2xl shadow-md mb-20">
         <h2 className="text-4xl font-bold text-center mb-12">Why Choose Us?</h2>
-        <div className="grid md:grid-cols-3 gap-10 text-center">
+        <div className="grid md:grid-cols-3 gap-10 text-center px-6">
           <div className="space-y-4">
             <div className="text-5xl">🇮🇳</div>
             <h3 className="text-2xl font-semibold">All Over India</h3>
@@ -86,8 +87,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Meet the Team */}
-      <section className="space-y-10">
+      {/* Team Section */}
+      <section className="space-y-10 mb-20">
         <h2 className="text-4xl font-bold text-center text-white">
           Meet the Team
         </h2>
@@ -106,16 +107,16 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <section className="text-center py-12 bg-gradient-to-r from-indigo-900 to-indigo-700 rounded-2xl shadow-md">
         <h2 className="text-3xl font-bold text-white mb-4">Join Our Journey</h2>
         <p className="text-lg text-gray-300 mb-6">
           Become part of a community that believes in growing better, together.
         </p>
         <a href="/contact">
-        <button className="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-full hover:bg-indigo-600 transition">
-          Contact Us
-        </button>
+          <button className="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-full hover:bg-indigo-600 transition">
+            Contact Us
+          </button>
         </a>
       </section>
     </div>

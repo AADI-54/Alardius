@@ -73,7 +73,6 @@ const navigation = {
     },
   ],
   pages: [
-    {name: "Home", href: "/"},
     { name: "About-Us", href: "/about" },
     { name: "Contact-Us", href: "/contact" },
   ],
@@ -206,8 +205,8 @@ export default function Navigation() {
       <header className="relative bg-gray-800 z-50">
         {" "}
         {/* Darken the background here */}
-        <p className="flex h-10 items-center justify-center bg-gray-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Contact us on *********
+        <p className="flex h-10 items-center justify-center bg-gray-900 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+          Contact us on  info.alardiushealthcare@gmail.com || 9996625922
         </p>
         <nav
           aria-label="Top"
@@ -226,16 +225,12 @@ export default function Navigation() {
               </button>
 
               {/* Logo */}
-              {/* <div className="ml-4 flex lg:ml-0">
+              <div className="ml-4 flex lg:ml-0">
                 <a href="/">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    alt="Logo"
-                    src="https://th.bing.com/th/id/OIP.oQULU5NqjjqNJX9ZS1nMZwAAAA?w=214&h=94&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                    className="h-8 w-auto"
-                  />
+                  <p className="flex items-center text-sm font-medium text-gray-300 hover:text-gray-100">Home</p>
                 </a>
-              </div> */}
+              </div>
 
               {/* Flyout menus */}
               <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch">

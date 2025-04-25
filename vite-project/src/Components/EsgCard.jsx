@@ -23,7 +23,7 @@ export default function ESGHeroCard() {
           </h2>
         </div>
         <button className="flex items-center gap-2 bg-white text-indigo-900 font-medium px-8 py-4 rounded-full hover:bg-gray-100 transition">
-          DOWNLOAD 2023 ESG REPORT
+          DOWNLOAD OUR PRODUCT LIST
           <Eye className="w-5 h-5 animate-pulseEye" />
         </button>
       </div>

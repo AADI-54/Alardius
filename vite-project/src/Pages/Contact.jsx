@@ -41,76 +41,109 @@ const ContactUs = () => {
     <div className="bg-gray-950 min-h-screen text-white px-4 py-10">
       {/* Info Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center justify-center">
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <MapPin className="mx-auto text-cyan-300 mb-2" size={32} />
-          <h4 className="font-semibold text-lg">OUR MAIN OFFICE</h4>
-          <p className="text-sm text-gray-400 mt-1">
-            SHOP NO.- 16, NEW GRAIN MARKET, JAGADHRI YAMUNA NAGAR-135001
-          </p>
+        <div
+          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
+        >
+          <div className="bg-gray-900 p-11 rounded-lg shadow-lg">
+            <MapPin className="mx-auto text-cyan-300 mb-2" size={32} />
+            <h4 className="font-semibold text-lg">OUR MAIN OFFICE</h4>
+            <p className="text-sm text-gray-400 mt-1">
+              SHOP NO.- 16, NEW GRAIN MARKET, JAGADHRI YAMUNA NAGAR-135001
+            </p>
+          </div>
         </div>
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <Phone className="mx-auto text-cyan-300 mb-2" size={32} />
-          <h4 className="font-semibold text-lg">PHONE NUMBER</h4>
-          <p className="text-sm text-gray-400 mt-1">
-            09996625922<br />
-            09812225922<br />
-            07027925922<br />
-            7027445922
-          </p>
+        <div
+          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
+        >
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <Phone className="mx-auto text-cyan-300 mb-2" size={32} />
+            <h4 className="font-semibold text-lg">PHONE NUMBER</h4>
+            <p className="text-sm text-gray-400 mt-1">
+              09996625922
+              <br />
+              09812225922
+              <br />
+              07027925922
+              <br />
+              7027445922
+            </p>
+          </div>
         </div>
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <Mail className="mx-auto text-cyan-300 mb-2" size={32} />
-          <h4 className="font-semibold text-lg">EMAIL</h4>
-          <p className="text-sm text-gray-400 mt-1">
-            <a href="mailto:info.alardiushealthcare@gmail.com">
-              info.alardiushealthcare@gmail.com
-            </a>
-          </p>
+        <div
+          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
+        >
+          <div className="bg-gray-900 p-13.5 rounded-lg shadow-lg">
+            <Mail className="mx-auto text-cyan-300 mb-2" size={32} />
+            <h4 className="font-semibold text-lg">EMAIL</h4>
+            <p className="text-sm text-gray-400 mt-1">
+              <a href="mailto:info.alardiushealthcare@gmail.com">
+                info.alardiushealthcare@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Contact Form */}
-      <div className="max-w-3xl mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl">
-        <h2 className="text-3xl font-bold text-center mb-6 text-white">Contact Us</h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <input
-            type="text"
-            required
-            placeholder="Enter your name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-          />
-          <input
-            type="email"
-            required
-            placeholder="Enter a valid email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-          />
-          <textarea
-            required
-            placeholder="Enter your message"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            rows={5}
-            className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-          ></textarea>
-          {responseMessage && (
-            <div className="text-center text-gray-300">{responseMessage}</div>
-          )}
-          <div className="text-center">
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="bg-cyan-600 hover:bg-cyan-700 transition px-6 py-3 rounded-lg text-white font-semibold disabled:opacity-50"
-            >
-              {isSubmitting ? "Submitting..." : "Submit"}
-            </button>
-          </div>
-        </form>
+{/* Contact Form */}
+<div className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+     bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden max-w-3xl mx-auto mb-10">
+  <div className="bg-gray-900 p-8 rounded-lg">
+    <h2 className="text-3xl font-bold text-center mb-6 text-white">Contact Us</h2>
+    <form onSubmit={handleSubmit} className="space-y-5">
+      <input
+        type="text"
+        required
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      />
+      <input
+        type="email"
+        required
+        placeholder="Enter a valid email address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      />
+      <textarea
+        required
+        placeholder="Enter your message"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        rows={5}
+        className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      ></textarea>
+      {responseMessage && (
+        <div className="text-center text-gray-300">{responseMessage}</div>
+      )}
+      <div className="text-center">
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="bg-cyan-600 hover:bg-cyan-700 transition px-6 py-3 rounded-lg text-white font-semibold disabled:opacity-50"
+        >
+          {isSubmitting ? "Submitting..." : "Submit"}
+        </button>
       </div>
+    </form>
+  </div>
+</div>
+
+
+      <style>
+        {`
+          @keyframes glow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
     </div>
   );
 };

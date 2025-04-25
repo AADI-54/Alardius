@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import img1 from './assetsCrousal/crousal3.jpg';
-import img2 from './assetsCrousal/crousal1.jpg';
-import img3 from './assetsCrousal/img3.jpg';
-import img4 from './assetsCrousal/img4.webp';
-import img5 from './assetsCrousal/img5.jpg';
+import img1 from './assetsCrousal/img1.png';
+import img2 from './assetsCrousal/img2.png';
+import img3 from './assetsCrousal/img3.png';
+import img4 from './assetsCrousal/img4.png';
+import img5 from './assetsCrousal/img5.png';
 
 const homeCarouselData = [
   { image: img1, path: '/' },
@@ -75,19 +75,21 @@ export const Maincrousal = () => {
 
       {/* Branding Text Below Carousel */}
       <motion.div
-        className="text-center mt-10"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-wider">
-          Alardius
-        </h2>
-        <p className="mt-2 text-gray-600 text-sm md:text-base tracking-wide">
-          Empowering Health, Elevating Life
-        </p>
-      </motion.div>
+  className="text-center mt-10"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  viewport={{ once: true }}
+>
+  <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-wider">
+    Alardius Healthcare
+  </h2>
+  <p className="mt-2 text-gray-300 text-sm md:text-base tracking-wide max-w-2xl mx-auto">
+    Empowering Health, Elevating Life. Alardius is a trusted partner in third-party pharmaceutical manufacturing,
+    offering high-quality, affordable solutions tailored to your brand’s needs. From concept to creation,
+    we deliver excellence, compliance, and innovation at every step.
+  </p>
+</motion.div>
     </div>
   );
 };
