@@ -9,9 +9,9 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// // Manually define __dirname for ES Modules
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+// Manually define __dirname for ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -21,12 +21,12 @@ app.use(express.json());
 app.use(cors());
 
 // Serve static files from the Vite frontend build
-// app.use(express.static(path.join(__dirname, "../vite-project/dist")));
+app.use(express.static(path.join(__dirname, "../vite-project/dist")));
 
-// // Handle any unmatched routes with index.html
-// app.get("/*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
-// });
+// Handle any unmatched routes with index.html
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../vite-project/dist/index.html"));
+});
 
 
 
