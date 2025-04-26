@@ -1,3 +1,7 @@
+import img55 from "./Productimg/ofxa-oz-55.jpg"
+
+
+
 export const Maindata = [
                //Tablets 
         {
@@ -437,7 +441,7 @@ export const Maindata = [
             name: "OFXA-OZ OFLOXACIN 200MG+ ORNIDAZOLE 500MG TABLET",
             description: "Composition: OFLOXACIN (200 mg) + ORNIDAZOLE (500 mg). Antibiotic and antiprotozoal combination.",
             packing: "10*10",
-            imageUrl: "link_to_image",
+            imageUrl: img55,
             categories: ["tablets"]
           },
           {

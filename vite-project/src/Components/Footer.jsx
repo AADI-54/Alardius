@@ -12,14 +12,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold border-b-2 border-blue-500 pb-2">About Alardius Healthcare</h3>
             <p className="text-gray-300">
-              Incepted in 2017 at Ambala (Haryana, India), we are the leading manufacturer of premium quality Protein Powder, 
+              Incepted in 2017 at Jagadhari (Haryana, India), we are the leading manufacturer of premium quality 
               Pharmaceutical Syrups, Pharmaceutical Tablets, and more.
             </p>
             <p className="text-gray-300">
               We offer PCD Pharma Franchises and Third Party Manufacturing to our esteemed clients.
             </p>
             <p className="text-gray-300">
-              Under the headship of <strong className="text-white">Mr. Mukesh Yadav</strong> (Marketing Manager)
+              Under the headship of <strong className="text-white">Mr. Mukesh Kumar</strong>
             </p>
           </div>
 
@@ -40,13 +40,13 @@ const Footer = () => {
             <div className="space-y-2 text-gray-300">
               <p><strong>Registered Office:</strong></p>
               <p>Alardius Healthcare</p>
-              <p>Ambala, Haryana, India</p>
+              <p>Jagadhari, Haryana, India</p>
               <p>Tel: +91 9996625922</p>
             </div>
             <div className="space-y-2 text-gray-300">
               <p><strong>Corporate Office:</strong></p>
               <p>SHOP NO.- 16, NEW GRAIN MARKET, JAGADHRI YAMUNA NAGAR-135001</p>
-              <p>Tel: <strong className="text-white">09996625922</strong></p>
+              <p>Tel: <strong className="text-white">9996625922</strong></p>
               <p>Email: <a href="mailto:info.alardiushealthcare@gmail.com" className="text-blue-400">info.alardiushealthcare@gmail.com</a></p>
               <p>Web: <a href="http://www.alardiushealthcare.com" className="text-blue-400">www.alardiushealthcare.com</a></p>
             </div>

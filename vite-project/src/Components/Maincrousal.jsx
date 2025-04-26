@@ -32,11 +32,11 @@ export const Maincrousal = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="min-w-full w-full h-[300px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] overflow-hidden rounded-xl"
+      className="min-w-full w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden rounded-xl"
       onClick={() => (window.location.href = item.path)}
     >
       <img
-        className="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+        className="w-full h-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
         src={item.image}
         alt={`carousel-img-${index}`}
       />
@@ -75,21 +75,21 @@ export const Maincrousal = () => {
 
       {/* Branding Text Below Carousel */}
       <motion.div
-  className="text-center mt-10"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.5 }}
-  viewport={{ once: true }}
->
-  <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-wider">
-    Alardius Healthcare
-  </h2>
-  <p className="mt-2 text-gray-300 text-sm md:text-base tracking-wide max-w-2xl mx-auto">
-    Empowering Health, Elevating Life. Alardius is a trusted partner in third-party pharmaceutical manufacturing,
-    offering high-quality, affordable solutions tailored to your brand’s needs. From concept to creation,
-    we deliver excellence, compliance, and innovation at every step.
-  </p>
-</motion.div>
+        className="text-center mt-10"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-wider">
+          Alardius Healthcare
+        </h2>
+        <p className="mt-2 text-gray-300 text-sm md:text-base tracking-wide max-w-2xl mx-auto">
+          Empowering Health, Elevating Life. Alardius is a trusted partner in third-party pharmaceutical manufacturing,
+          offering high-quality, affordable solutions tailored to your brand’s needs. From concept to creation,
+          we deliver excellence, compliance, and innovation at every step.
+        </p>
+      </motion.div>
     </div>
   );
 };

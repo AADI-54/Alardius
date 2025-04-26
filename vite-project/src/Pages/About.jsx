@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import img1 from '../Data/img/mission.jpg';
-import img2 from '../Data/img/story.jpg';
+import img1 from "../Data/img/mission.jpg";
+import img2 from "../Data/img/story.jpg";
 
 const AboutUs = () => {
   return (
@@ -12,12 +12,14 @@ const AboutUs = () => {
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white">Our Mission</h2>
           <p className="text-lg text-gray-300">
-            There's this notion that to grow a business, you have to be ruthless.
-            But we know there's a better way to grow. One where what's good for the
-            bottom line is also good for customers. We believe businesses can grow
-            with a conscience, and succeed with a soul – and that they can do it with
-            inbound. That’s why we’ve created an ecosystem uniting software,
-            education, and community to help businesses grow better every day.
+            At Alardius Healthcare, our mission is to bring hope to life through
+            innovative and <strong>affordable</strong> healthcare solutions. Established in 2017
+            in Jagadhari, we are committed to delivering <strong>high-quality
+            pharmaceutical products</strong> that promote healthier and more productive
+            lives. With WHO and GMP-certified manufacturing, we ensure
+            excellence in every product. Through our PCD Pharma Franchise and
+            <strong> Third Party Manufacturing services</strong>, we aim to expand access to
+            trusted medicines across India.
           </p>
         </div>
         <motion.div
@@ -51,10 +53,19 @@ const AboutUs = () => {
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white">Our Story</h2>
           <p className="text-lg text-gray-300">
-            As fellow graduate students at MIT in 2004, Brian and Dharmesh noticed a
-            shift in the way people shop and buy. Consumers were no longer tolerating
-            interruptive bids for their attention – in fact, they’d gotten really,
-            really good at ignoring them.
+            Founded in <strong> 2017 </strong> in Jagadhari, Haryana, <strong>Alardius Healthcare</strong> began with a
+            clear vision—to make quality healthcare accessible and affordable
+            for all. Backed by years of industry expertise and a commitment to
+            excellence, we quickly grew into a trusted name in the
+            pharmaceutical sector. Our journey started with a focused range of
+            syrups, tablets, and others, and expanded into a
+            full-fledged pharmaceutical company offering PCD Pharma Franchise
+            and Third Party Manufacturing services. Led by <strong>Mr. Mukesh Kumar</strong> , our
+            dedicated team continues to innovate and evolve to meet the growing
+            healthcare needs of patients across India. With certified
+            manufacturing units, reliable distribution, and a passion for
+            service, we are proud to be among the pharma companies in the
+            region.
           </p>
         </div>
       </section>
@@ -94,13 +105,18 @@ const AboutUs = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[1, 2, 3].map((id) => (
-            <div key={id} className="bg-gray-800 rounded-2xl shadow-md p-6 text-center">
+            <div
+              key={id}
+              className="bg-gray-800 rounded-2xl shadow-md p-6 text-center"
+            >
               <img
                 src={`/team-member-${id}.jpg`}
                 alt={`Team member ${id}`}
                 className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
               />
-              <h3 className="text-xl font-semibold text-white">Team Member {id}</h3>
+              <h3 className="text-xl font-semibold text-white">
+                Team Member {id}
+              </h3>
               <p className="text-gray-400">Role/Title</p>
             </div>
           ))}

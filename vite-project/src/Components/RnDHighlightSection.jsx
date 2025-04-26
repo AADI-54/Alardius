@@ -21,7 +21,7 @@ const RnDHighlightSection = () => {
             Welcome to Alardius Healthcare
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight max-w-4xl text-white">
-            Pharma Franchise Company in Ambala
+            Pharma Company in Jagadhari, Haryana
           </h2>
         </div>
 
@@ -125,7 +125,7 @@ const RnDHighlightSection = () => {
             >
               <h3 className="text-lg font-semibold mb-2">Trusted Since 2017</h3>
               <p className="text-sm">
-                Based in Ambala, Haryana – Alardius Healthcare
+                Based in Jagadhari, Haryana – Alardius Healthcare
                 <br />
                 Serving quality across India
               </p>
