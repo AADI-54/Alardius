@@ -43,7 +43,7 @@ const RnDHighlightSection = () => {
             >
               <div className="h-full flex items-center justify-center bg-black/50 text-white text-center p-4">
                 <h3 className="text-xl font-bold drop-shadow-lg">
-                  Premium Pharma Manufacturing
+                  Third Party Manufacturing
                 </h3>
               </div>
             </div>
@@ -64,7 +64,7 @@ const RnDHighlightSection = () => {
             >
               <div className="h-full flex items-center justify-center bg-black/50 text-white text-center p-4">
                 <h3 className="text-xl font-bold drop-shadow-md mb-2">
-                  PCD Pharma Franchise
+                 Pharma Distributer
                 </h3>
               </div>
             </div>

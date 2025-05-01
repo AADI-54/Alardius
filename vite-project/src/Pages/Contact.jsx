@@ -41,7 +41,7 @@ const ContactUs = () => {
     <div
       className="bg-cover bg-center min-h-screen text-white px-4 py-10"
       style={{
-        backgroundImage: "url('https://imgs.search.brave.com/Ph4nGzNK2OVTuCkzJFwIVI5no_SZ9IYzBzX97Ayfx90/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/b250YWN0LXVzLWNv/bW11bmljYXRpb24t/c3VwcG9ydC1zZXJ2/aWNlLWFzc2lzdGFu/Y2UtY29uY2VwdF81/Mzg3Ni0xMjgxMDMu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MA')", // Replace with your image URL
+        backgroundImage: "url('https://nis.consulting/wp-content/uploads/2016/10/24_Contact-Us-Header_Background.jpg')", // Replace with your image URL
       }}
     >
       {/* Info Cards */}
@@ -62,7 +62,7 @@ const ContactUs = () => {
           className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
                 bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
         >
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-900 p-8.5 rounded-lg shadow-lg">
             <Phone className="mx-auto text-cyan-300 mb-2" size={32} />
             <h4 className="font-semibold text-lg">PHONE NUMBER</h4>
             <p className="text-sm text-gray-400 mt-1">
@@ -71,8 +71,6 @@ const ContactUs = () => {
               09812225922
               <br />
               07027925922
-              <br />
-              7027445922
             </p>
           </div>
         </div>
@@ -84,8 +82,8 @@ const ContactUs = () => {
             <Mail className="mx-auto text-cyan-300 mb-2" size={32} />
             <h4 className="font-semibold text-lg">EMAIL</h4>
             <p className="text-sm text-gray-400 mt-1">
-              <a href="mailto:info.alardiushealthcare@gmail.com">
-                info.alardiushealthcare@gmail.com
+              <a href="mailto:alardiushealthcare@gmail.com">
+                alardiushealthcare@gmail.com
               </a>
             </p>
           </div>

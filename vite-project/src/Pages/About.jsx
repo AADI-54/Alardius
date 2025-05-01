@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import img1 from "../Data/img/mission.jpg";
 import img2 from "../Data/img/story.jpg";
+import img from "../Data/img/Md.png"; // <-- (Managing Director image)
 
 const AboutUs = () => {
   return (
@@ -17,7 +18,7 @@ const AboutUs = () => {
             in Jagadhari, we are committed to delivering <strong>high-quality
             pharmaceutical products</strong> that promote healthier and more productive
             lives. With WHO and GMP-certified manufacturing, we ensure
-            excellence in every product. Through our PCD Pharma Franchise and
+            excellence in every product. Through our Pharma Distribution and
             <strong> Third Party Manufacturing services</strong>, we aim to expand access to
             trusted medicines across India.
           </p>
@@ -53,14 +54,14 @@ const AboutUs = () => {
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white">Our Story</h2>
           <p className="text-lg text-gray-300">
-            Founded in <strong> 2017 </strong> in Jagadhari, Haryana, <strong>Alardius Healthcare</strong> began with a
+            Founded in <strong>2017</strong> in Jagadhari, Haryana, <strong>Alardius Healthcare</strong> began with a
             clear vision—to make quality healthcare accessible and affordable
             for all. Backed by years of industry expertise and a commitment to
             excellence, we quickly grew into a trusted name in the
             pharmaceutical sector. Our journey started with a focused range of
             syrups, tablets, and others, and expanded into a
-            full-fledged pharmaceutical company offering PCD Pharma Franchise
-            and Third Party Manufacturing services. Led by <strong>Mr. Mukesh Kumar</strong> , our
+            full-fledged pharmaceutical company offering Pharma Distribution
+            and Third Party Manufacturing services. Led by <strong>Mr. Mukesh Kumar</strong>, our
             dedicated team continues to innovate and evolve to meet the growing
             healthcare needs of patients across India. With certified
             manufacturing units, reliable distribution, and a passion for
@@ -98,28 +99,31 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="space-y-10 mb-20">
-        <h2 className="text-4xl font-bold text-center text-white">
-          Meet the Team
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((id) => (
-            <div
-              key={id}
-              className="bg-gray-800 rounded-2xl shadow-md p-6 text-center"
-            >
-              <img
-                src={`/team-member-${id}.jpg`}
-                alt={`Team member ${id}`}
-                className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold text-white">
-                Team Member {id}
-              </h3>
-              <p className="text-gray-400">Role/Title</p>
-            </div>
-          ))}
+      {/* Managing Director Section */}
+      <section className="grid md:grid-cols-2 gap-10 items-center mb-20">
+        <motion.div
+          className="w-full"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src={img}
+            alt="Managing Director Mukesh Kumar"
+            className="w-full h-auto rounded-3xl shadow-lg object-cover"
+          />
+        </motion.div>
+        <div className="space-y-6">
+          <h2 className="text-4xl font-bold text-white">Managing Director</h2>
+          <h3 className="text-2xl text-indigo-400 font-semibold">Mr. Mukesh Kumar</h3>
+          <p className="text-lg text-gray-300">
+            Mr. Mukesh Kumar, the visionary founder and Managing Director of Alardius Healthcare, 
+            brings years of dedication and industry expertise to the pharmaceutical sector. 
+            Under his leadership, Alardius Healthcare has flourished into a trusted name in 
+            <strong> Third Party Pharma Manufacturing</strong> and distribution services across India. 
+            His unwavering focus on quality, affordability, and innovation drives the company’s mission 
+            to make superior healthcare solutions accessible to all.
+          </p>
         </div>
       </section>
 

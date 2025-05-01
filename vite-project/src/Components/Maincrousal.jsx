@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -9,15 +9,20 @@ import img3 from './assetsCrousal/img3.png';
 import img4 from './assetsCrousal/img4.png';
 import img5 from './assetsCrousal/img5.png';
 
+import mobileimg1 from './assetsCrousal/mobileimg1.png';
+import mobileimg2 from './assetsCrousal/mobileimg2.png';
+import mobileimg3 from './assetsCrousal/mobileimg3.png';
+import mobileimg4 from './assetsCrousal/mobileimg4.png';
+import mobileimg5 from './assetsCrousal/mobileimg5.png';
+
 const homeCarouselData = [
-  { image: img1, path: '/' },
-  { image: img2, path: '/health-supplements/vitamins' },
-  { image: img3, path: '/personal-care' },
-  { image: img4, path: '/diabetes-care' },
-  { image: img5, path: '/immunity-boosters' },
+  { desktopImage: img1, mobileImage: mobileimg1, path: '/' },
+  { desktopImage: img2, mobileImage: mobileimg2, path: '/' },
+  { desktopImage: img3, mobileImage: mobileimg3, path: '/' },
+  { desktopImage: img4, mobileImage: mobileimg4, path: '/' },
+  { desktopImage: img5, mobileImage: mobileimg5, path: '/' },
 ];
 
-// Force one item per slide and full width
 const responsive = {
   0: { items: 1 },
   600: { items: 1 },
@@ -25,6 +30,19 @@ const responsive = {
 };
 
 export const Maincrousal = () => {
+  const [isTabletOrMobile, setIsTabletOrMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTabletOrMobile(window.innerWidth < 1024);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const items = homeCarouselData.map((item, index) => (
     <motion.div
       key={index}
@@ -37,7 +55,7 @@ export const Maincrousal = () => {
     >
       <img
         className="w-full h-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-        src={item.image}
+        src={isTabletOrMobile ? item.mobileImage : item.desktopImage}
         alt={`carousel-img-${index}`}
       />
     </motion.div>

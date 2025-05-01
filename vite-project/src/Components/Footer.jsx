@@ -16,7 +16,7 @@ const Footer = () => {
               Pharmaceutical Syrups, Pharmaceutical Tablets, and more.
             </p>
             <p className="text-gray-300">
-              We offer PCD Pharma Franchises and Third Party Manufacturing to our esteemed clients.
+              We offer Distributorship and Third Party Manufacturing to our esteemed clients.
             </p>
             <p className="text-gray-300">
               Under the headship of <strong className="text-white">Mr. Mukesh Kumar</strong>
@@ -38,17 +38,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold border-b-2 border-blue-500 pb-2">Contact Information</h3>
             <div className="space-y-2 text-gray-300">
-              <p><strong>Registered Office:</strong></p>
-              <p>Alardius Healthcare</p>
-              <p>Jagadhari, Haryana, India</p>
-              <p>Tel: +91 9996625922</p>
-            </div>
-            <div className="space-y-2 text-gray-300">
               <p><strong>Corporate Office:</strong></p>
               <p>SHOP NO.- 16, NEW GRAIN MARKET, JAGADHRI YAMUNA NAGAR-135001</p>
               <p>Tel: <strong className="text-white">9996625922</strong></p>
-              <p>Email: <a href="mailto:info.alardiushealthcare@gmail.com" className="text-blue-400">info.alardiushealthcare@gmail.com</a></p>
+              <p>Email: <a href="mailto:alardiushealthcare@gmail.com" className="text-blue-400">alardiushealthcare@gmail.com</a></p>
               <p>Web: <a href="http://www.alardiushealthcare.com" className="text-blue-400">www.alardiushealthcare.com</a></p>
+            </div>
+            <div className="space-y-2 text-gray-300">
+              <p><strong>Manufacturing Unit:</strong></p>
+              <p> <strong> Unit-1</strong> Rampur Jattan, Trilokpur Road, Kala-Amb</p>
+              <p>  <strong> Unit-2</strong>  Sec-38, HSIIDC,Industrial Area, Sonipat</p>
             </div>
           </div>
 
@@ -71,17 +70,11 @@ const Footer = () => {
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Alardius Healthcare. All Rights Reserved
             </div>
-            <div className="flex flex-wrap gap-4">
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Code Of Conduct</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Disclaimer</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Contact Us</a>
-            </div>
           </div>
 
           {/* Social and Contact Icons */}
           <div className="flex justify-center gap-8 mt-4">
-            <a href="mailto:info.alardiushealthcare@gmail.com" className="text-gray-400 hover:text-white text-3xl">
+            <a href="mailto:alardiushealthcare@gmail.com" className="text-gray-400 hover:text-white text-3xl">
               <Mail />
             </a>
             <a href="https://wa.me/919996625922" className="text-gray-400 hover:text-white text-3xl">
