@@ -28,20 +28,20 @@ const navigation = {
       id: "Products",
       name: "Products",
       featured: [
-        {
-          name: "New Arrivals",
-          href: "#",
-          imageSrc:
-            "https://th.bing.com/th/id/OIP.FTBQW-3HqoLQnNjDsZSpLgAAAA?w=209&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-          imageAlt: "Close up of Basic Tee fall bundle.",
-        },
-        {
-          name: "Basic Tees",
-          href: "#",
-          imageSrc:
-            "https://th.bing.com/th/id/OIP.FTBQW-3HqoLQnNjDsZSpLgAAAA?w=209&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-          imageAlt: "Close up of Basic Tee fall bundle.",
-        },
+        // {
+        //   name: "New Arrivals",
+        //   href: "#",
+        //   imageSrc:
+        //     "https://th.bing.com/th/id/OIP.FTBQW-3HqoLQnNjDsZSpLgAAAA?w=209&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        //   imageAlt: "Close up of Basic Tee fall bundle.",
+        // },
+        // {
+        //   name: "Basic Tees",
+        //   href: "#",
+        //   imageSrc:
+        //     "https://th.bing.com/th/id/OIP.FTBQW-3HqoLQnNjDsZSpLgAAAA?w=209&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        //   imageAlt: "Close up of Basic Tee fall bundle.",
+        // },
       ],
       sections: [
         {

@@ -36,8 +36,8 @@ app.get("/*", (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "aggarwaladitya0889@gmail.com",  // Replace with your email
-    pass: "ylua lfzt uffy slbt",           // Use App Password, not your real password
+    user: "info.alardiushealthcare@gmail.com",  // Replace with your email
+    pass: "clno bifp muvo asod",           // Use App Password, not your real password
   },
 });
 
@@ -46,8 +46,8 @@ app.post("/submit-query", (req, res) => {
   const { name, email, query } = req.body;
 
   const mailOptions = {
-    from: "aggarwaladitya0889@gmail.com",
-    to: "aggarwaladitya839@gmail.com",
+    from: "info.alardiushealthcare@gmail.com",
+    to: "alardiushealthcare@gmail.com",
     subject: "New Query Submission",
     text: `You have received a new query submission:\n\nName: ${name}\nEmail: ${email}\nQuery: ${query}`,
   };
