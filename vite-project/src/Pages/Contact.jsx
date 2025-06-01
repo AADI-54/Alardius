@@ -14,7 +14,7 @@ const ContactUs = () => {
     const data = { name, email, query };
 
     try {
-      const response = await fetch("http://localhost:5000/submit-query", {
+      const response = await fetch("https://alardius.onrender.com/submit-query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
