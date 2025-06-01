@@ -14,7 +14,7 @@ const ContactUs = () => {
     const data = { name, email, query };
 
     try {
-      const response = await fetch("http://localhost:10000/submit-query", {
+      const response = await fetch("/submit-query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,15 +41,14 @@ const ContactUs = () => {
     <div
       className="bg-cover bg-center min-h-screen text-white px-4 py-10"
       style={{
-        backgroundImage: "url('https://nis.consulting/wp-content/uploads/2016/10/24_Contact-Us-Header_Background.jpg')", // Replace with your image URL
+        backgroundImage:
+          "url('https://nis.consulting/wp-content/uploads/2016/10/24_Contact-Us-Header_Background.jpg')",
       }}
     >
       {/* Info Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center justify-center">
-        <div
-          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
-                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
-        >
+        <div className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden">
           <div className="bg-gray-900 p-11 rounded-lg shadow-lg">
             <MapPin className="mx-auto text-cyan-300 mb-2" size={32} />
             <h4 className="font-semibold text-lg">OUR MAIN OFFICE</h4>
@@ -58,10 +57,8 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div
-          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
-                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
-        >
+        <div className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden">
           <div className="bg-gray-900 p-8.5 rounded-lg shadow-lg">
             <Phone className="mx-auto text-cyan-300 mb-2" size={32} />
             <h4 className="font-semibold text-lg">PHONE NUMBER</h4>
@@ -74,10 +71,8 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div
-          className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
-                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden"
-        >
+        <div className="relative p-[2px] rounded-lg bg-gradient-to-r from-cyan-400 via-white to-purple-500 
+                bg-[length:400%_400%] animate-[glow_6s_linear_infinite] shadow-[0_0_15px_2px_rgba(255,255,255,0.2)] overflow-hidden">
           <div className="bg-gray-900 p-13.5 rounded-lg shadow-lg">
             <Mail className="mx-auto text-cyan-300 mb-2" size={32} />
             <h4 className="font-semibold text-lg">EMAIL</h4>
